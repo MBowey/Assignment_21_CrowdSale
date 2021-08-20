@@ -1,6 +1,6 @@
 # Assignment_21_CrowdSale
 
-![PupperCoin](Screenshots/PupperCoin.png)
+![PupperCoin](Screenshots/crowd.png)
 
 ## Overview
 
