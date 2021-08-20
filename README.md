@@ -4,9 +4,7 @@
 
 ## Overview
 
-For this assignment, the objective was to build a crowdsale for a company token called PupperCoin that would help fund network development.
-
-This network will be used to track the dog breeding activity across the globe in a decentralized way, and allow humans to track the genetic trail of their pets. The structure of the Crowdsale would allow for refunds, if the crowdsale is successful and the goal is met. The maximum amount of Ether raised is capped at 300 Ether and this is also the goal amount. The crowdsale will run for 24 weeks; however, I have set it to 15mins for the sake of testing. The 
+For this assignment, the objective was to build a crowdsale for a company token called PupperCoin that would help fund network development.This network will be used to track the dog breeding activity across the globe in a decentralized way, and allow humans to track the genetic trail of their pets. The structure of the Crowdsale would allow for refunds, if the crowdsale is successful and the goal is met. The maximum amount of Ether raised is capped at 300 Ether and this is also the goal amount. The crowdsale will run for 24 weeks; however, I have set it to 15mins for the sake of testing. The 
 
 Our PupperCoin will be an ERC20 token and it will be minted through a Crowdsale contract that can be leveraged from the OpenZeppelin Solidity library.
 
