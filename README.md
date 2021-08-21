@@ -4,17 +4,7 @@
 
 ## Overview
 
-For this assignment, the objective was to build a crowdsale for a company token called PupperCoin that would help fund network development.This network will be used to track the dog breeding activity across the globe in a decentralized way, and allow humans to track the genetic trail of their pets. The structure of the Crowdsale would allow for refunds, if the crowdsale is successful and the goal is met. The maximum amount of Ether raised is capped at 300 Ether and this is also the goal amount. The crowdsale will run for 24 weeks; however, I have set it to 15mins for the sake of testing. The 
-
-Our PupperCoin will be an ERC20 token and it will be minted through a Crowdsale contract that can be leveraged from the OpenZeppelin Solidity library.
-
-This crowdsale contract will manage the entire process, allowing users to send ETH and get back PUP (PupperCoin).
-
-This contract will mint the tokens automatically and distribute them to buyers in one transaction.
-
-It will need to inherit Crowdsale, CappedCrowdsale, TimedCrowdsale, RefundableCrowdsale, and MintedCrowdsale.
-
-Once finalized the crowdsale can be deployed on the Kovan or Ropsten testnet in order to get a real-world pre-production test in. For the sake of testing, and limitations with the amount of test Ether you can recieve on Kovan or Ropsten I have deployed the crowdsale on my `Local 5777` Blockchain Network.
+For this assignment, the objective was to build a Crowdsale for a company token called PupperCoin that would help fund network development. This network will be used to track the dog breeding activity across the globe in a decentralized way, and allow humans to track the genetic trail of their pets. The structure of the Crowdsale will allow for refunds, if the Crowdsale is successful and the goal is met. The maximum amount of Ether raised is capped at `300 Ether` and this is also the goal amount. The Crowdsale will run for 24 weeks; however, I have set it to 15mins for the sake of testing. The PupperCoin will be an ERC20 token and it will be minted through a Crowdsale contract that can be leveraged from the OpenZeppelin Solidity library. This Crowdsale contract will manage the entire process, allowing users to send ETH and get back PUP (PupperCoin). The contract will also mint the tokens automatically and distribute them to buyers in one transaction. It will need to inherit Crowdsale, CappedCrowdsale, TimedCrowdsale, RefundableCrowdsale, and MintedCrowdsale. Once finalized the crowdsale can be deployed on the Kovan or Ropsten testnet in order to get a real-world pre-production test in. For the sake of testing, and limitations with the amount of test `Ether` you can recieve on Kovan or Ropsten I have deployed the Crowdsale on my `Local 5777` Blockchain Network.
 
 
 ## CrowdSale Deployment
@@ -27,9 +17,9 @@ Navigate to the [Remix IDE](https://remix.ethereum.org) and create new solidity 
 
 While developing and testing the contract, use the [Ganache](https://www.trufflesuite.com/ganache) development chain and point MetaMask to `localhost:8545`, or replace the port with what you have set in your workspace.
 
-Once Metamask is connected, deploy the contracts on our local blockchain by going to the `Crowdsale.sol` file in remix and selecting `PupperCoinSaleDeployer - Crowdsale.sol` under the contract dropdown. 
+Once Metamask is connected, deploy the contracts on your local blockchain by going to the `Crowdsale.sol` file in remix and selecting `PupperCoinSaleDeployer - Crowdsale.sol` under the contract dropdown. 
 
-Input the `wallet` that will recieve `Ether` in exchange for your `PupperCoin` and the remaining fields as seen in the following screenshot:
+Input the `wallet` that will recieve `Ether` in exchange for `PupperCoin`. Fill out the remaining fields as seen in the following screenshot:
 
 * ![CrowdSale](Screenshots/CrowdSale.png)
 
@@ -39,7 +29,7 @@ Once you hit transact, you should have a `Deployed Contract` as follows where yo
 
 ## Buying PupperCoin
 
-There are two ways of buying PupperCoin during the Crowdsale. One way is to send `Ether` directly from your wallet to the `Crowdsale - Address`. In this case, we used our MyCrypto Wallet. 
+There are two ways of buying PupperCoin during the Crowdsale. One way is to send `Ether` directly from your wallet to the `Crowdsale - Address`. In this case, I used MyCrypto Wallet. 
 
 * ![Account4 Buy](Screenshots/Account4_Buy.png)
 
@@ -65,7 +55,7 @@ Account6 (Buyer):   105.49ETH ----> 5.49ETH
 
 ## Finalizing The Crowdsale
 
-Once we have completed the transactions and the `goal` of `300ETH` has been achieved we can click the `Finalize` button in order to finalize the Crowdsale. In order for this to work, the Crowdsale `closingTime` will need to be reached. In our case, we set it to `Now + 15 Minutes`. We can then check that the Crowdsale has been finalized by clicking the blue `finalized`, `goalReached` and `hasClosed` buttons.
+Once we have completed the transactions and the `goal` of `300ETH` has been achieved we can click the `Finalize` button in order to finalize the Crowdsale. In order for this to work, the Crowdsale `closingTime` will need to be reached. In my case, I set it to `Now + 15 Minutes`. We can then check that the Crowdsale has been finalized by clicking the blue `finalized`, `goalReached` and `hasClosed` buttons.
 
 * ![Sale Finalized](Screenshots/Sale_Finalized.png)
 
